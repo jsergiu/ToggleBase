@@ -1,0 +1,44 @@
+{
+  "id": "facebook",
+  "name": "Facebook",
+  "icon": "FB",
+  "summary": "Cut off cross-web tracking, reduce search engine exposure, and audit third-party app access.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Off-Meta Activity",
+      "recommendedValue": "Disconnected",
+      "clickPath": ["Menu", "Settings & Privacy", "Settings", "Accounts Center", "Your Information and Permissions", "Your Activity Off Meta Technologies", "Disconnect Future Activity"],
+      "impact": "Facebook collects data from millions of external websites via invisible tracking pixels — even when you are not logged in. Disconnecting stops it from feeding ad targeting.",
+      "source": "Consumer Reports: 'Facebook Privacy Settings You Should Change Right Now'"
+    },
+    {
+      "name": "Search Engine Profile Indexing",
+      "recommendedValue": "OFF",
+      "clickPath": ["Menu", "Settings & Privacy", "Settings", "Audience and Visibility", "How People Find and Contact You", "Do you want search engines to link to your profile?", "Toggle OFF"],
+      "impact": "With this on, your Facebook profile appears in Google results, making it trivially easy for strangers, stalkers, or data brokers to find your account.",
+      "source": "Consumer Reports"
+    },
+    {
+      "name": "Default Audience for Posts",
+      "recommendedValue": "Friends",
+      "clickPath": ["Menu", "Settings & Privacy", "Default Audience Settings", "Friends"],
+      "impact": "New posts default to Public unless changed. Once public, posts are indexed by search engines and accessible to data brokers.",
+      "source": "Consumer Reports"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["Menu", "Settings & Privacy", "Settings", "Accounts Center", "Password and Security", "Two-Factor Authentication", "Authenticator App"],
+      "impact": "A compromised Facebook account exposes years of messages, photos, and personal data. An authenticator app is significantly more secure than SMS.",
+      "source": "Consumer Reports; Tom's Guide"
+    },
+    {
+      "name": "Third-Party App Access",
+      "recommendedValue": "Revoke all unused apps",
+      "clickPath": ["Menu", "Settings & Privacy", "Settings", "Your Activity", "Apps and Websites", "Logged in with Facebook", "Remove"],
+      "impact": "Apps authorized years ago via 'Login with Facebook' still have access to your profile data. Revoking closes this ongoing data-sharing channel.",
+      "source": "Consumer Reports"
+    }
+  ]
+}

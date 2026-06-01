@@ -1,0 +1,44 @@
+{
+  "id": "zoom",
+  "name": "Zoom",
+  "icon": "ZM",
+  "summary": "Enable Waiting Room, require passcodes, and disable AI meeting transcription by default.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Waiting Room",
+      "recommendedValue": "ON for all meetings",
+      "clickPath": ["zoom.us", "Settings", "Security", "Waiting Room: Toggle ON"],
+      "impact": "The Waiting Room is the single most effective barrier against uninvited guests (Zoombombing). It lets the host control who enters instead of allowing anyone with the link to join immediately.",
+      "source": "Reco.ai: 'Essential Guide to Zoom Security'; Valence Security Zoom Guide"
+    },
+    {
+      "name": "Meeting Passcodes",
+      "recommendedValue": "ON",
+      "clickPath": ["zoom.us", "Settings", "Security", "Require a passcode when scheduling new meetings: Toggle ON"],
+      "impact": "Meeting IDs can be guessed or found via social media. A passcode adds a second authentication layer, preventing random users from joining private meetings.",
+      "source": "Reco.ai Zoom Security Best Practices; Valence Security Guide"
+    },
+    {
+      "name": "AI Companion / Meeting Summary",
+      "recommendedValue": "OFF for sensitive meetings",
+      "clickPath": ["zoom.us", "Settings", "AI Companion tab", "Meeting Summary: Toggle OFF", "Smart Recording: Toggle OFF"],
+      "impact": "AI Companion transcribes and summarizes meetings, creating a persistent record of conversations that may include confidential or privileged information.",
+      "source": "Georgetown University UIS Zoom AI Privacy Guide; Zoom Community documentation"
+    },
+    {
+      "name": "End-to-End Encryption",
+      "recommendedValue": "ON for sensitive calls",
+      "clickPath": ["zoom.us", "Account Settings", "Meetings tab", "Security", "Allow use of end-to-end encryption: Toggle ON"],
+      "impact": "Zoom's default encryption is transport-level — Zoom can access content. E2EE encrypts so only meeting participants can see it. Trade-off: disables cloud recording and live transcription.",
+      "source": "Zoom Support: 'Enabling end-to-end encryption for Zoom meetings'; Mimecast Zoom Security Guide"
+    },
+    {
+      "name": "Automatic Cloud Recording",
+      "recommendedValue": "OFF",
+      "clickPath": ["zoom.us", "Settings", "Recording tab", "Automatic recording: Toggle OFF"],
+      "impact": "Cloud recordings are stored on Zoom's servers and can contain sensitive business or personal conversations. Disabling ensures meetings are not permanently stored without a deliberate decision.",
+      "source": "Emerson College Zoom Recording Security Guide; JHU Zoom Recording Best Practices"
+    }
+  ]
+}

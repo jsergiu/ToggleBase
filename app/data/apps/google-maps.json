@@ -1,0 +1,44 @@
+{
+  "id": "google-maps",
+  "name": "Google Maps",
+  "icon": "GM",
+  "summary": "Disable location history, use Incognito for sensitive routes, and limit OS-level location access.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows"],
+  "settings": [
+    {
+      "name": "Location History / Timeline",
+      "recommendedValue": "OFF",
+      "clickPath": ["myactivity.google.com", "Activity controls", "Location History", "Toggle OFF"],
+      "impact": "Google Maps Timeline records every place you visit with timestamps. This data has been used in geofence warrants to identify people near crime scenes.",
+      "source": "SafeToolsHub Google Privacy Guide; Google Maps Privacy documentation"
+    },
+    {
+      "name": "Web & App Activity (Location)",
+      "recommendedValue": "OFF",
+      "clickPath": ["myactivity.google.com", "Activity controls", "Web & App Activity", "Turn off"],
+      "impact": "Even with Location History off, Web & App Activity continues saving location data from Maps searches. Both must be disabled — a gap most users miss.",
+      "source": "WhatIsMyIP: 'Google Maps and Your Privacy'; SafeToolsHub Google Privacy Guide"
+    },
+    {
+      "name": "Location Permission (OS Level)",
+      "recommendedValue": "While Using the App",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Location Services", "Google Maps", "While Using the App"],
+      "impact": "Granting 'Always' lets Maps track your position continuously in the background. 'While Using' restricts tracking to active navigation only.",
+      "source": "EFF Opt-Out October; Google Maps Privacy Help"
+    },
+    {
+      "name": "Incognito Mode",
+      "recommendedValue": "ON for sensitive destinations",
+      "clickPath": ["Profile photo", "Turn on Incognito mode"],
+      "impact": "Incognito mode prevents searches and routes from being saved to your Timeline, useful when navigating to medical facilities, places of worship, or other sensitive destinations.",
+      "source": "Google Maps Help documentation; makeuseof.com Google Maps Privacy Guide"
+    },
+    {
+      "name": "Delete Existing Location History",
+      "recommendedValue": "Delete all",
+      "clickPath": ["google.com/maps/timeline", "Settings gear", "Delete all Location History"],
+      "impact": "Turning off future tracking does not remove past data. Google stores years of precise location records that can reveal home address, work, and medical visits.",
+      "source": "makeuseof.com; Google Account Help documentation"
+    }
+  ]
+}

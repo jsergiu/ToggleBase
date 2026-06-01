@@ -1,0 +1,44 @@
+{
+  "id": "netflix",
+  "name": "Netflix",
+  "icon": "NF",
+  "summary": "Review active devices, use a unique password, and manage your viewing history.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows"],
+  "settings": [
+    {
+      "name": "Sign Out of Unrecognized Devices",
+      "recommendedValue": "Remove all unrecognized",
+      "clickPath": ["netflix.com/ManageDevices", "Review list of recent devices", "Sign out of devices you don't recognize"],
+      "impact": "Your credentials may still be saved on ex-partners', family members', or previously shared devices. Unauthorized access can also indicate account compromise.",
+      "source": "Netflix Help Center: 'How to Keep Your Account Secure'"
+    },
+    {
+      "name": "Account Password",
+      "recommendedValue": "Strong unique password (12+ characters)",
+      "clickPath": ["netflix.com/password"],
+      "impact": "Netflix accounts are targeted in credential-stuffing attacks using passwords leaked from other services. A unique strong password prevents this attack. Use a password manager.",
+      "source": "Netflix Help Center Account Security documentation"
+    },
+    {
+      "name": "Viewing Activity Privacy",
+      "recommendedValue": "Hide sensitive titles",
+      "clickPath": ["Account page", "Profile & Parental Controls", "Viewing Activity", "Hide icon next to specific titles"],
+      "impact": "Netflix viewing history can reveal sensitive interests and is visible to other profile users on the same account. Hiding specific titles removes them from shared view.",
+      "source": "Netflix Help Center Privacy documentation"
+    },
+    {
+      "name": "Email Account Verification",
+      "recommendedValue": "Ensure account email is current",
+      "clickPath": ["Account page", "Membership & Billing", "Verify Email Address is current and accessible"],
+      "impact": "Netflix sends notifications for new device sign-ins and account changes to your registered email. An outdated email means you will not receive security alerts.",
+      "source": "Netflix Help Center: 'How to Keep Your Account Secure'"
+    },
+    {
+      "name": "Phone Number for Verification",
+      "recommendedValue": "Add a verified phone number",
+      "clickPath": ["Account page", "Settings", "Phone number section", "Add phone number"],
+      "impact": "Netflix uses your phone number for risky-login verification, sending a code when it detects unusual sign-in patterns. Without it, account recovery is significantly harder.",
+      "source": "Netflix Help Center Security documentation"
+    }
+  ]
+}

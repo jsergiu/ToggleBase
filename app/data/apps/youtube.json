@@ -1,0 +1,44 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "icon": "YT",
+  "summary": "Limit behavioral profiling by pausing watch history and disabling ad personalization.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Watch History",
+      "recommendedValue": "Paused or auto-delete every 3 months",
+      "clickPath": ["Profile icon", "Settings", "History & Privacy", "Pause Watch History"],
+      "impact": "YouTube watch history feeds Google's behavioral ad profiles. Pausing or auto-deleting reduces the depth of data used for targeting across all Google services.",
+      "source": "MyPrivacy.Blog: 'YouTube Privacy Configuration: A 2025 Technical Guide'; EFF Opt-Out October"
+    },
+    {
+      "name": "Search History",
+      "recommendedValue": "Paused",
+      "clickPath": ["Profile icon", "Settings", "History & Privacy", "Pause Search History"],
+      "impact": "YouTube search queries reveal sensitive interests — health concerns, political views — and are stored indefinitely by default, fueling recommendations and ad targeting.",
+      "source": "MyPrivacy.Blog; Google Privacy settings documentation"
+    },
+    {
+      "name": "Ad Personalization",
+      "recommendedValue": "OFF",
+      "clickPath": ["Google Account", "Data & Privacy", "My Ad Center", "Turn off Personalized Ads"],
+      "impact": "YouTube ad targeting draws on search history, location, and watch history. Disabling this switches YouTube to contextual ads based on video topic only.",
+      "source": "EFF Opt-Out October; Google My Ad Center documentation"
+    },
+    {
+      "name": "Incognito Mode",
+      "recommendedValue": "ON for sensitive searches",
+      "clickPath": ["Profile icon", "Turn on Incognito"],
+      "impact": "Incognito mode prevents the current session's views and searches from being linked to your account history without permanently affecting your recommendations.",
+      "source": "Google YouTube Privacy documentation"
+    },
+    {
+      "name": "Delete Existing Activity",
+      "recommendedValue": "Delete all",
+      "clickPath": ["myactivity.google.com", "YouTube History", "Delete", "All time"],
+      "impact": "Turning off future tracking does not remove past data. Google stores years of watch and search history that can reveal sensitive personal patterns.",
+      "source": "MyPrivacy.Blog YouTube Privacy Configuration Guide"
+    }
+  ]
+}

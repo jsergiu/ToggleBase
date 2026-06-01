@@ -1,0 +1,44 @@
+{
+  "id": "instagram",
+  "name": "Instagram",
+  "icon": "IG",
+  "summary": "Disconnect cross-site tracking, lock down discoverability, and stop contact syncing.",
+  "supportedOs": ["iOS", "Android"],
+  "settings": [
+    {
+      "name": "Off-Meta Activity",
+      "recommendedValue": "Disconnected",
+      "clickPath": ["Profile", "Menu", "Accounts Center", "Your Information and Permissions", "Your Activity off Meta Technologies", "Disconnect Future Activity"],
+      "impact": "Meta's tracking pixels follow you across millions of websites even when you're not on Instagram. Disconnecting stops that data from feeding your ad profile.",
+      "source": "Consumer Reports: 'Instagram Privacy Settings You Should Change Right Now'"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["Profile", "Menu", "Accounts Center", "Password and Security", "Two-Factor Authentication", "Authenticator App"],
+      "impact": "SMS-based 2FA is vulnerable to SIM-swapping. An authenticator app generates codes locally and cannot be intercepted by a carrier hack.",
+      "source": "Consumer Reports; Tom's Guide '5 steps to safer social media'"
+    },
+    {
+      "name": "Location Access",
+      "recommendedValue": "Never",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Location Services", "Instagram", "Never"],
+      "impact": "Instagram uses location data for ad targeting across the Meta ecosystem. Denying at the OS level prevents this entirely — location is not required for core features.",
+      "source": "Consumer Reports: 'Instagram Privacy Settings You Should Change Right Now'"
+    },
+    {
+      "name": "Account Privacy",
+      "recommendedValue": "Private",
+      "clickPath": ["Profile", "Menu", "Account privacy", "Private Account", "Toggle ON"],
+      "impact": "Public accounts let data brokers and scrapers harvest your photos, stories, and captions. A private account requires you to approve each follower.",
+      "source": "Consumer Reports; NJCCIC Instagram Security Guide"
+    },
+    {
+      "name": "Contact Syncing",
+      "recommendedValue": "OFF",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Contacts", "Instagram", "Toggle OFF"],
+      "impact": "Instagram uses your address book to build social graphs and recommend your profile to contacts' contacts — including people you may not want to be findable by.",
+      "source": "Consumer Reports"
+    }
+  ]
+}

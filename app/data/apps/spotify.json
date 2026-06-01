@@ -1,0 +1,44 @@
+{
+  "id": "spotify",
+  "name": "Spotify",
+  "icon": "SP",
+  "summary": "Keep listening habits private, opt out of ad profiling, and revoke third-party app access.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Private Session",
+      "recommendedValue": "ON when listening privately",
+      "clickPath": ["Profile photo", "Settings and privacy", "Privacy and social", "Private session", "Toggle ON"],
+      "impact": "Listening history can reveal mood, beliefs, and health concerns. Private Session hides this from followers in real time, though Spotify still logs plays internally.",
+      "source": "musictechpolicy.com: 'Spotify Privacy Quick Guide'; ExpressVPN Spotify Private Session Guide"
+    },
+    {
+      "name": "Tailored Ads",
+      "recommendedValue": "OFF",
+      "clickPath": ["spotify.com/account", "Security and Privacy", "Account privacy", "Process my personal data for tailored ads", "Toggle OFF"],
+      "impact": "Spotify logs listening habits, searches, device identifiers, and location to build behavioral profiles for advertisers. Opting out limits use of your data for third-party ad targeting.",
+      "source": "musictechpolicy.com Spotify Privacy Quick Guide; Total Defense security blog"
+    },
+    {
+      "name": "Location Permission",
+      "recommendedValue": "Never",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Location Services", "Spotify", "Never"],
+      "impact": "Spotify requests location access but music streaming does not require it. Location data is used solely to refine ad targeting. Denying eliminates this collection entirely.",
+      "source": "musictechpolicy.com; totaldefense.com Spotify Privacy Guide"
+    },
+    {
+      "name": "Playlist Visibility",
+      "recommendedValue": "Private for personal playlists",
+      "clickPath": ["Three dots next to playlist", "Make private"],
+      "impact": "Public playlists are searchable and indexed. Research has shown playlists can reveal religion, politics, and mental health status — information you may not want publicly linked to your account.",
+      "source": "musictechpolicy.com; GeeksForGeeks How to Make Spotify Private"
+    },
+    {
+      "name": "Third-Party App Access",
+      "recommendedValue": "Revoke all unused apps",
+      "clickPath": ["spotify.com/account", "Apps", "Review and Revoke unused apps"],
+      "impact": "Apps authorized via Spotify's API can read your listening history, playlists, and account information on an ongoing basis.",
+      "source": "musictechpolicy.com Spotify Privacy Quick Guide"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "tiktok",
+  "name": "TikTok",
+  "icon": "TT",
+  "summary": "Limit data collection, restrict discoverability, and cut off location access.",
+  "supportedOs": ["iOS", "Android"],
+  "settings": [
+    {
+      "name": "Private Account",
+      "recommendedValue": "ON",
+      "clickPath": ["Profile icon", "Three lines (top right)", "Settings and Privacy", "Privacy", "Private Account"],
+      "impact": "TikTok accounts are public by default, allowing anyone — including data brokers and scrapers — to view your content. Private mode requires follower approval.",
+      "source": "HowToGeek: '10 TikTok Privacy Settings You Should Change Right Now'; NJCCIC Security Guide"
+    },
+    {
+      "name": "Location Services",
+      "recommendedValue": "Never",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Location Services", "TikTok", "Never"],
+      "impact": "TikTok has been documented collecting device location data. Denying at the OS level prevents the app from accessing GPS coordinates entirely.",
+      "source": "HowToGeek; Internet Safety Labs TikTok Privacy Risks Research"
+    },
+    {
+      "name": "Ad Personalization",
+      "recommendedValue": "OFF",
+      "clickPath": ["Profile", "Settings and Privacy", "Ads", "Personalized Ads", "Toggle OFF"],
+      "impact": "Disabling stops TikTok from using your off-platform browsing behavior to target ads, reducing the data footprint linked to ByteDance.",
+      "source": "HowToGeek; University of Ottawa TikTok Privacy Risks Guide"
+    },
+    {
+      "name": "Direct Messages",
+      "recommendedValue": "No One or Friends only",
+      "clickPath": ["Settings and Privacy", "Privacy", "Direct Messages", "Allow Direct Messages From", "No One"],
+      "impact": "TikTok's default DM settings allow broad contact. Restricting prevents unsolicited messages from strangers, phishing, and harassment.",
+      "source": "HowToGeek; TikTok Safety Tools & Guides (tiktok.com/safety)"
+    },
+    {
+      "name": "Following List Privacy",
+      "recommendedValue": "Only Me",
+      "clickPath": ["Settings and Privacy", "Privacy", "Following List", "Only Me"],
+      "impact": "A public following list lets attackers map your social network and target your connections for social engineering attacks.",
+      "source": "HowToGeek"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "icon": "AI",
+  "summary": "Opt out of AI training, disable persistent memory, and use Temporary Chat for sensitive queries.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "AI Model Training Opt-Out",
+      "recommendedValue": "OFF",
+      "clickPath": ["Profile icon", "Settings", "Data Controls", "Improve the model for everyone: Toggle OFF"],
+      "impact": "By default your conversations are used to train future OpenAI models, including potential review by human contractors. Disabling ensures future conversations are not used for model training.",
+      "source": "OpenAI Help Center: 'What if I want to keep my history on but disable model training?'; Tom's Guide: 'Keep your ChatGPT data private'"
+    },
+    {
+      "name": "Memory",
+      "recommendedValue": "OFF or carefully reviewed",
+      "clickPath": ["Profile icon", "Settings", "Personalization", "Memory", "Toggle OFF or Manage Memory to review and delete stored facts"],
+      "impact": "ChatGPT Memory stores facts about you across conversations (health conditions, beliefs, relationships). This data is retained indefinitely unless manually deleted.",
+      "source": "OpenAI Memory FAQ; OpenAI Memory Controls announcement"
+    },
+    {
+      "name": "Temporary Chat",
+      "recommendedValue": "ON for sensitive topics",
+      "clickPath": ["New chat icon", "Temporary Chat option"],
+      "impact": "Temporary chats are not saved to history, do not update Memory, and are not used for model training. Use this mode for sensitive medical, legal, or personal queries.",
+      "source": "OpenAI Help Center: Temporary Chat documentation; OpenAI Data Controls FAQ"
+    },
+    {
+      "name": "Chat History Deletion",
+      "recommendedValue": "Delete chats you do not need to retain",
+      "clickPath": ["Profile icon", "Settings", "General", "Delete All Chats"],
+      "impact": "OpenAI retains conversation data for up to 30 days for safety review even with training disabled. Deleting chats reduces data available in any potential breach.",
+      "source": "OpenAI Data Controls FAQ; openai.com/consumer-privacy"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["platform.openai.com", "Profile", "Settings", "Security", "Enable Two-factor authentication"],
+      "impact": "Your ChatGPT account may contain sensitive conversation history. Account takeover would expose past conversations and allow an attacker to use your API credits or subscription.",
+      "source": "OpenAI Account Security documentation; EFF 2FA guidance"
+    }
+  ]
+}

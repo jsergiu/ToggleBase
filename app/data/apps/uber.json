@@ -1,0 +1,44 @@
+{
+  "id": "uber",
+  "name": "Uber",
+  "icon": "UB",
+  "summary": "Limit background location tracking, revoke contacts access, and enable two-step verification.",
+  "supportedOs": ["iOS", "Android"],
+  "settings": [
+    {
+      "name": "Location Permission",
+      "recommendedValue": "While Using the App",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Location Services", "Uber", "While Using the App"],
+      "impact": "The 'Always' setting lets Uber sample your GPS continuously, even when you are asleep. 'While Using' restricts location collection to when the app is actively on screen or a trip is in progress.",
+      "source": "WeLiveSecurity (ESET): 'How Uber seems to know where you are – even with restricted location permissions'"
+    },
+    {
+      "name": "Contacts Permission",
+      "recommendedValue": "Denied",
+      "clickPath": ["Phone Settings", "Privacy & Security", "Contacts", "Uber", "Toggle OFF"],
+      "impact": "Uber uses contact list access to build a social graph. Your contacts' data is shared without their knowledge or consent. Revoking prevents Uber from uploading your address book.",
+      "source": "Uber Privacy Settings Overview; lifetips.alibaba.com"
+    },
+    {
+      "name": "Two-Step Verification",
+      "recommendedValue": "ON",
+      "clickPath": ["Uber app", "Account", "Settings", "Security", "Two-Step Verification", "Enable"],
+      "impact": "Your Uber account is linked to payment methods and your home address. Account takeover can result in fraudulent rides charged to your card. 2FA prevents access even if your password is compromised.",
+      "source": "Uber Account Security documentation"
+    },
+    {
+      "name": "Connected Applications",
+      "recommendedValue": "Revoke all unused",
+      "clickPath": ["Uber app", "Account", "Privacy Center", "Connected Apps", "Review and remove unused"],
+      "impact": "Third-party apps connected via Uber's API can access your trip history, location data, and personal details on an ongoing basis.",
+      "source": "Uber Privacy Center; Uber Newsroom Privacy Settings"
+    },
+    {
+      "name": "Notifications Audit (geofence ads)",
+      "recommendedValue": "Disable marketing notifications",
+      "clickPath": ["Phone Settings", "Notifications", "Uber", "Review and disable promotional notification types"],
+      "impact": "Uber uses Apple's geofence notification feature to send location-based promotional messages at airports and venues. Disabling marketing notifications removes this ad delivery mechanism.",
+      "source": "WeLiveSecurity (ESET): 'How Uber seems to know where you are – even with restricted location permissions'"
+    }
+  ]
+}

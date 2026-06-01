@@ -1,0 +1,44 @@
+{
+  "id": "discord",
+  "name": "Discord",
+  "icon": "DC",
+  "summary": "Disable data personalization, restrict friend requests, and audit authorized third-party apps.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Data Personalization",
+      "recommendedValue": "All OFF",
+      "clickPath": ["User Settings (gear icon)", "Privacy & Safety", "How We Use Your Data", "Toggle OFF all personalization options"],
+      "impact": "Discord collects activity data — which games you play, when you use the app, what content you interact with. Disabling all toggles limits what Discord can do with this data for ad targeting.",
+      "source": "Discord Data Privacy Controls documentation; Discord 2025 Policy Update"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["User Settings (gear icon)", "My Account", "Enable Two-Factor Auth", "Use Authenticator App"],
+      "impact": "Discord accounts can be compromised via phishing and credential stuffing. 2FA with an authenticator app prevents account takeover even if your password is stolen.",
+      "source": "MyPrivacy.Blog Discord Privacy & Security Guide 2025"
+    },
+    {
+      "name": "Friend Request Controls",
+      "recommendedValue": "Server Members or Friends of Friends",
+      "clickPath": ["User Settings (gear icon)", "Privacy & Safety", "Friend Requests", "Server Members or Friends of Friends"],
+      "impact": "Allowing everyone to send friend requests opens you to unsolicited contact from harassers and spammers. Restricting to server members limits exposure to vetted individuals.",
+      "source": "MyPrivacy.Blog Discord Privacy & Security Guide 2025"
+    },
+    {
+      "name": "Activity Status",
+      "recommendedValue": "OFF",
+      "clickPath": ["User Settings (gear icon)", "Privacy & Safety", "Activity Privacy", "Display current activity as status message: Toggle OFF"],
+      "impact": "Activity status broadcasts which games or apps you are using in real time to your entire server and friend list. Disabling prevents others from tracking your application usage.",
+      "source": "Discord Privacy Hub; MyPrivacy.Blog"
+    },
+    {
+      "name": "Authorized Applications",
+      "recommendedValue": "Revoke all unused",
+      "clickPath": ["User Settings (gear icon)", "Authorized Apps", "Deauthorize unwanted apps"],
+      "impact": "Third-party bots and apps authorized via Discord's OAuth can read your server memberships, messages, and profile data. Regular audits close data access from apps you no longer use.",
+      "source": "MyPrivacy.Blog Discord Guide 2025; Discord Safety documentation"
+    }
+  ]
+}

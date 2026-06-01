@@ -1,0 +1,44 @@
+{
+  "id": "google-chrome",
+  "name": "Google Chrome",
+  "icon": "GC",
+  "summary": "Block third-party cookies, enable Secure DNS, and limit telemetry sent to Google.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Block Third-Party Cookies",
+      "recommendedValue": "Blocked",
+      "clickPath": ["Settings", "Privacy and security", "Third-party cookies", "Block third-party cookies"],
+      "impact": "Third-party cookies are the primary mechanism advertisers use to track you across different websites. Blocking them prevents cross-site tracking without breaking most website functionality.",
+      "source": "Privacy International: Chrome Privacy Guide; ChromeThemer.com 2026"
+    },
+    {
+      "name": "Safe Browsing",
+      "recommendedValue": "Enhanced Protection",
+      "clickPath": ["Settings", "Privacy and security", "Security", "Safe Browsing", "Enhanced protection"],
+      "impact": "Enhanced Protection warns you about dangerous sites, downloads, and extensions in real time, even for new threats not yet catalogued. Trade-off: it sends more browsing telemetry to Google.",
+      "source": "Privacy International: 'Adjusting Chrome Settings to Enhance Your Online Privacy'; ChromeThemer.com 2026"
+    },
+    {
+      "name": "Browsing Data Sharing",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings", "You and Google", "Sync and Google Services", "Toggle OFF: 'Make searches and browsing better' and 'Help improve Chrome features'"],
+      "impact": "These settings send browsing data to Google's servers for analysis. Disabling stops Chrome from uploading your browsing behavior to Google while keeping core functionality intact.",
+      "source": "Privacy International Chrome Privacy Guide"
+    },
+    {
+      "name": "Site Permissions Audit",
+      "recommendedValue": "Ask before accessing",
+      "clickPath": ["Settings", "Privacy and security", "Site settings", "Set Location, Camera, Microphone, Notifications to 'Ask before accessing'"],
+      "impact": "Many sites are granted location, microphone, or camera access and users forget they authorized it. Resetting to 'Ask' ensures no site silently retains sensitive hardware access.",
+      "source": "Privacy International Chrome Privacy Guide"
+    },
+    {
+      "name": "Secure DNS",
+      "recommendedValue": "ON with privacy-focused provider",
+      "clickPath": ["Settings", "Privacy and security", "Security", "Use secure DNS", "Custom", "Enter 1.1.1.1 (Cloudflare) or 9.9.9.9 (Quad9)"],
+      "impact": "Standard DNS queries are sent unencrypted, letting your ISP see every domain you visit. DNS-over-HTTPS encrypts these lookups and prevents eavesdropping.",
+      "source": "ChromeThemer.com Chrome Privacy Configuration Tips 2026; Google Chrome Help"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "telegram",
+  "name": "Telegram",
+  "icon": "TG",
+  "summary": "Use Secret Chats for E2EE, lock down discoverability, and enable two-step verification.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Use Secret Chats",
+      "recommendedValue": "Always for sensitive conversations",
+      "clickPath": ["Select contact", "Tap contact name", "More", "Start Secret Chat"],
+      "impact": "Regular Telegram chats are stored on Telegram's servers and are NOT end-to-end encrypted by default. Secret Chats use device-to-device E2EE — not even Telegram can read them.",
+      "source": "ESET: 'Telegram Privacy Explained: What's Protected & What's Not'; Kaspersky Messaging Privacy Rankings 2025"
+    },
+    {
+      "name": "Two-Step Verification",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Privacy and Security", "Two-Step Verification", "Set Password"],
+      "impact": "Telegram accounts are accessed via SMS code only by default. A SIM-swap attack gives an attacker full account access. A second password blocks this.",
+      "source": "such.chat Security Checklist; Kaspersky Blog"
+    },
+    {
+      "name": "Phone Number Visibility",
+      "recommendedValue": "Nobody",
+      "clickPath": ["Settings", "Privacy and Security", "Phone Number", "Who can see my number: Nobody"],
+      "impact": "Telegram user discovery relies on phone numbers. Making your number invisible prevents strangers from finding your profile via number lookup.",
+      "source": "such.chat Security Checklist; ESET Privacy Guide"
+    },
+    {
+      "name": "Who Can Add You to Groups",
+      "recommendedValue": "My Contacts",
+      "clickPath": ["Settings", "Privacy and Security", "Groups & Channels", "My Contacts"],
+      "impact": "Anyone can add you to groups by default. Scammers exploit this to pull users into fraudulent crypto or phishing group chats. Restricting to contacts blocks this vector.",
+      "source": "such.chat Security Checklist; Telegram Security Guide 2025"
+    },
+    {
+      "name": "Passcode Lock",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Privacy and Security", "Passcode Lock", "Turn On"],
+      "impact": "Without a passcode, anyone who picks up your unlocked phone can read all Telegram messages, including cloud chat history. This adds a layer independent of your phone's screen lock.",
+      "source": "such.chat Security Checklist"
+    }
+  ]
+}

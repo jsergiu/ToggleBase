@@ -1,0 +1,44 @@
+{
+  "id": "whatsapp",
+  "name": "WhatsApp",
+  "icon": "WA",
+  "summary": "Reduce metadata exposure, enable encrypted backups, and lock down account security.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows"],
+  "settings": [
+    {
+      "name": "End-to-End Encrypted Backup",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Chats", "Chat Backup", "End-to-end encrypted backup"],
+      "impact": "Without this, backups on Google Drive or iCloud are not end-to-end encrypted. Enabling it ensures WhatsApp and Apple/Google cannot decrypt your backup if compelled legally.",
+      "source": "EFF Surveillance Self-Defense (ssd.eff.org); Mozilla Foundation WhatsApp Privacy Review"
+    },
+    {
+      "name": "Two-Step Verification",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Account", "Two-Step Verification", "Enable"],
+      "impact": "Requires a PIN before WhatsApp can be registered on any new device with your number, blocking SIM-swap attacks and account hijacking.",
+      "source": "EFF Surveillance Self-Defense; Mozilla Foundation WhatsApp Privacy Review"
+    },
+    {
+      "name": "Protect IP Address in Calls",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Privacy", "Advanced", "Protect IP address in calls"],
+      "impact": "By default, WhatsApp calls are peer-to-peer, revealing your IP address to the other party. This routes calls through WhatsApp servers to hide your real IP.",
+      "source": "EFF Surveillance Self-Defense"
+    },
+    {
+      "name": "Advanced Chat Privacy",
+      "recommendedValue": "ON",
+      "clickPath": ["Open a chat", "Tap contact or group name", "Advanced chat privacy", "Toggle ON"],
+      "impact": "Prevents chat exports, disables automatic media downloads, and blocks Meta AI from reading the conversation. Enable on sensitive chats.",
+      "source": "EFF Deeplinks: 'What WhatsApp's Advanced Chat Privacy Really Does' (eff.org, 2025)"
+    },
+    {
+      "name": "Link Previews",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings", "Privacy", "Advanced", "Disable link previews"],
+      "impact": "When you send a link, WhatsApp fetches a preview from the URL, which can expose your WhatsApp version and allow tracking-pixel URLs to enumerate your account.",
+      "source": "EFF Surveillance Self-Defense"
+    }
+  ]
+}

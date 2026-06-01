@@ -1,0 +1,44 @@
+{
+  "id": "reddit",
+  "name": "Reddit",
+  "icon": "RD",
+  "summary": "Disable search engine indexing of your profile, opt out of ad tracking, and hide active communities.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Search Engine Profile Indexing",
+      "recommendedValue": "OFF",
+      "clickPath": ["User Settings (profile icon)", "Privacy & Safety", "Allow search engines to index my profile: Toggle OFF"],
+      "impact": "With indexing on, every comment and post is searchable via Google, making it trivial for employers, family, or adversaries to find your entire posting history and correlate it with your real identity.",
+      "source": "MyPrivacy.Blog Reddit Privacy Guide 2025; vpnoverview.com Reddit Privacy Settings Guide"
+    },
+    {
+      "name": "Personalized Ads",
+      "recommendedValue": "OFF",
+      "clickPath": ["User Settings (profile icon)", "Privacy & Safety", "Personalize ads based on information from our partners: Toggle OFF"],
+      "impact": "Reddit sold its data to Google and AI companies in 2024 and uses third-party data for ad targeting. Opting out stops cross-site behavioral data from being used for ads shown on Reddit.",
+      "source": "MyPrivacy.Blog Reddit Privacy Guide 2025"
+    },
+    {
+      "name": "Active Communities Visibility",
+      "recommendedValue": "Hidden",
+      "clickPath": ["User Settings (profile icon)", "Profile", "Show active communities: Toggle OFF"],
+      "impact": "Displaying your active subreddits publicly reveals interests, affiliations, and health concerns. Hiding this prevents casual visitors from profiling you.",
+      "source": "MyPrivacy.Blog Reddit Privacy Guide 2025"
+    },
+    {
+      "name": "Chat Request Restrictions",
+      "recommendedValue": "Trusted Users only",
+      "clickPath": ["User Settings (profile icon)", "Safety & Privacy", "Who can send you chat requests: Trusted Users"],
+      "impact": "Reddit chat is a common vector for scams and phishing. Restricting chat requests to accounts with established history reduces bot and troll contact.",
+      "source": "MyPrivacy.Blog Reddit Privacy Guide 2025"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON",
+      "clickPath": ["User Settings", "Account Security", "Use two-factor authentication: Set up with Authenticator App"],
+      "impact": "Reddit accounts contain years of posting history and private messages. 2FA prevents account takeover from credential leaks.",
+      "source": "MyPrivacy.Blog Reddit Privacy Guide 2025; Reddit Help Security documentation"
+    }
+  ]
+}

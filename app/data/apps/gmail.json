@@ -1,0 +1,44 @@
+{
+  "id": "gmail",
+  "name": "Gmail",
+  "icon": "ML",
+  "summary": "Secure your Google account with 2FA, auto-delete activity, and revoke third-party app access.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App or Passkey",
+      "clickPath": ["myaccount.google.com", "Security", "How you sign in to Google", "2-Step Verification", "Set up Authenticator or Passkey"],
+      "impact": "Gmail stores your most sensitive communications. A compromised Gmail account cascades to every service linked to that address. 2FA is the single most impactful security step.",
+      "source": "EFF Surveillance Self-Defense; EFF Opt-Out October"
+    },
+    {
+      "name": "Mail Tracking Protection (iOS)",
+      "recommendedValue": "ON",
+      "clickPath": ["Phone Settings", "Apps", "Mail", "Privacy Protection", "Protect Mail Activity: Toggle ON"],
+      "impact": "Email tracking pixels tell senders when you opened an email, your location, and device type. Mail Privacy Protection on iOS pre-loads emails via Apple's proxy, hiding this data from senders.",
+      "source": "EFF: 'How to Get to Know iPhone Privacy and Security Settings' (ssd.eff.org)"
+    },
+    {
+      "name": "Ad Personalization",
+      "recommendedValue": "OFF",
+      "clickPath": ["myaccount.google.com", "Data & Privacy", "My Ad Center", "Personalized Ads: Toggle OFF"],
+      "impact": "Google uses your search history, YouTube activity, and historical Gmail content to build ad profiles. Turning off personalized ads stops this data from being used for targeting across the Google ad network.",
+      "source": "EFF Opt-Out October; Google My Ad Center documentation"
+    },
+    {
+      "name": "Third-Party App Access",
+      "recommendedValue": "Revoke all unused apps",
+      "clickPath": ["myaccount.google.com", "Security", "Third-party apps with Google account access", "Remove access for unused apps"],
+      "impact": "Apps authorized via Google OAuth can access your Gmail, Calendar, and Drive on an ongoing basis. This is a common source of data breaches via compromised third-party apps.",
+      "source": "EFF Surveillance Self-Defense; Google Security documentation"
+    },
+    {
+      "name": "Auto-Delete Activity",
+      "recommendedValue": "3-month auto-delete",
+      "clickPath": ["myactivity.google.com", "Activity controls", "Web & App Activity", "Auto-delete: 3 months"],
+      "impact": "By default Google retains all account activity indefinitely. Auto-delete limits the historical record that can be subpoenaed or accessed in a breach.",
+      "source": "EFF Opt-Out October; Google Data & Privacy documentation"
+    }
+  ]
+}

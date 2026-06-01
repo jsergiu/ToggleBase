@@ -1,0 +1,44 @@
+{
+  "id": "linkedin",
+  "name": "LinkedIn",
+  "icon": "LI",
+  "summary": "Opt out of AI training, hide your connections, and stop profile edit broadcasts.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows"],
+  "settings": [
+    {
+      "name": "AI Model Training Opt-Out",
+      "recommendedValue": "OFF (opted out)",
+      "clickPath": ["Settings & Privacy", "Data Privacy", "Data for Generative AI Improvement", "Toggle OFF"],
+      "impact": "LinkedIn activated data-for-AI-training in 2025 without explicit opt-in. Your profile, posts, and activity are used to train Microsoft/LinkedIn's generative AI models unless you opt out.",
+      "source": "Help Net Security: 'LinkedIn now uses your data for AI by default, opt out now!' (2025); Malwarebytes Blog; Proton Blog"
+    },
+    {
+      "name": "Search Engine Indexing",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings & Privacy", "Visibility", "Edit your public profile", "Public profile visibility: Toggle OFF"],
+      "impact": "A publicly indexed LinkedIn profile gives data brokers, stalkers, and social engineers direct access to your work history, skills, and contact details via any search engine.",
+      "source": "MyPrivacy.Blog LinkedIn Privacy Protection Guide 2025"
+    },
+    {
+      "name": "Profile Edit Broadcasts",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings & Privacy", "Visibility", "Visibility of your LinkedIn activity", "Share profile updates with your network: Toggle OFF"],
+      "impact": "Every profile update notifies your entire network. This can inadvertently reveal a job search to your current employer.",
+      "source": "MyPrivacy.Blog LinkedIn Privacy Protection Guide 2025"
+    },
+    {
+      "name": "Connections List Visibility",
+      "recommendedValue": "Only Me",
+      "clickPath": ["Settings & Privacy", "Visibility", "Connections", "Who can see your connections: Only you"],
+      "impact": "Exposing your LinkedIn network allows competitors, recruiters poaching your team, or social engineers to map your professional relationships for targeted attacks.",
+      "source": "MyPrivacy.Blog LinkedIn Privacy Protection Guide 2025"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["Settings & Privacy", "Sign in & Security", "Two-step verification", "Set up with Authenticator App"],
+      "impact": "LinkedIn has been subject to multiple large-scale credential breaches (2012, 2021). 2FA ensures stolen passwords alone are insufficient for account access.",
+      "source": "MyPrivacy.Blog LinkedIn Privacy Protection Guide 2025"
+    }
+  ]
+}

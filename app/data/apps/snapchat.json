@@ -1,0 +1,44 @@
+{
+  "id": "snapchat",
+  "name": "Snapchat",
+  "icon": "SC",
+  "summary": "Enable Ghost Mode to hide your location, restrict who can contact you, and enable 2FA.",
+  "supportedOs": ["iOS", "Android"],
+  "settings": [
+    {
+      "name": "Ghost Mode (Snap Map)",
+      "recommendedValue": "ON",
+      "clickPath": ["Map icon", "Settings gear (top right)", "Ghost Mode", "Toggle ON"],
+      "impact": "Snap Map broadcasts your precise real-time location to all your friends by default. Ghost Mode hides your location from everyone — a critical safety measure, especially for minors.",
+      "source": "Snapchat Support: Snap Map Privacy & Safety Reminder; Total Defense Security Blog"
+    },
+    {
+      "name": "Who Can Contact Me",
+      "recommendedValue": "My Friends",
+      "clickPath": ["Profile icon", "Settings (gear)", "Privacy Controls", "Contact Me", "My Friends"],
+      "impact": "Anyone can send you snaps and messages by default. Restricting to Friends significantly reduces spam, harassment, and phishing attempts from strangers.",
+      "source": "Snapchat Support: Security and Safety Steps"
+    },
+    {
+      "name": "Who Can View My Story",
+      "recommendedValue": "Friends",
+      "clickPath": ["Profile icon", "Settings (gear)", "Privacy Controls", "View My Story", "Friends"],
+      "impact": "Stories are visible to all contacts by default. Limiting visibility prevents acquaintances or lapsed contacts from tracking your daily activities.",
+      "source": "Snapchat Safety documentation"
+    },
+    {
+      "name": "See Me in Quick Add",
+      "recommendedValue": "OFF",
+      "clickPath": ["Profile icon", "Settings (gear)", "Privacy Controls", "See Me in Quick Add", "Toggle OFF"],
+      "impact": "Quick Add shows your profile to friends-of-friends as a suggested contact. Disabling reduces your discoverability to people you have not chosen to connect with.",
+      "source": "Snapchat Privacy Settings Guide"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["Profile icon", "Settings (gear)", "Two-Factor Authentication", "Continue", "Authenticator App"],
+      "impact": "Snapchat account takeovers can expose private photos and messages. An authenticator app provides significantly stronger protection than SMS verification.",
+      "source": "Snapchat Security documentation"
+    }
+  ]
+}

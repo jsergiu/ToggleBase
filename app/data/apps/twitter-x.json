@@ -1,0 +1,44 @@
+{
+  "id": "twitter-x",
+  "name": "Twitter / X",
+  "icon": "X",
+  "summary": "Protect your posts, disable behavioral ad tracking, and switch to app-based 2FA.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Protect Your Posts",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings and privacy", "Privacy and safety", "Audience and tagging", "Protect your posts", "Toggle ON"],
+      "impact": "Public tweets are indexed by search engines and accessible to data brokers indefinitely. Protecting posts means only approved followers can see them.",
+      "source": "Comparitech: 'Twitter Privacy Settings Guide'; MyPrivacy.Blog X Security Guide 2025"
+    },
+    {
+      "name": "Ad & Data Personalization",
+      "recommendedValue": "All OFF",
+      "clickPath": ["Settings and privacy", "Privacy and safety", "Data sharing and personalization", "Disable all"],
+      "impact": "X uses behavioral data including off-platform activity to target ads and build user profiles. Disabling all personalization settings cuts off this profiling at the source.",
+      "source": "Comparitech; MyPrivacy.Blog; EFF Opt-Out October"
+    },
+    {
+      "name": "Discoverability via Email / Phone",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings and privacy", "Privacy and safety", "Discoverability and contacts", "Uncheck 'Let people find you by email' and 'Let people find you by phone number'"],
+      "impact": "Data brokers buy contact lists and use X's discoverability feature to map email addresses and phone numbers to X profiles, enriching their databases.",
+      "source": "Comparitech; MyPrivacy.Blog"
+    },
+    {
+      "name": "Location in Posts",
+      "recommendedValue": "OFF",
+      "clickPath": ["Settings and privacy", "Privacy and safety", "Location information", "Toggle OFF"],
+      "impact": "Attaching location to tweets creates a permanent, searchable record of your physical movements. This data has been used in stalking cases.",
+      "source": "Comparitech; MyPrivacy.Blog"
+    },
+    {
+      "name": "Two-Factor Authentication",
+      "recommendedValue": "ON with Authenticator App",
+      "clickPath": ["Settings and privacy", "Security and account access", "Security", "Two-factor authentication", "Authentication app"],
+      "impact": "X removed free SMS 2FA for non-Premium users in 2023. Use an authenticator app — it is significantly more resistant to SIM-swap attacks than SMS.",
+      "source": "MyPrivacy.Blog X Security Guide 2025; Comparitech"
+    }
+  ]
+}

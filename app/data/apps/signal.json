@@ -1,0 +1,44 @@
+{
+  "id": "signal",
+  "name": "Signal",
+  "icon": "SG",
+  "summary": "Harden the most secure messenger with registration lock, IP protection, and disappearing messages.",
+  "supportedOs": ["iOS", "Android", "macOS", "Windows", "Linux"],
+  "settings": [
+    {
+      "name": "Registration Lock",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Account", "Registration Lock", "Toggle ON and create PIN"],
+      "impact": "Without this, anyone who gains access to your phone number via SIM swap can register Signal on a new device, taking over your account. The PIN prevents this.",
+      "source": "securityinabox.org: 'Protect yourself when using Signal'; EFF SSD Signal Guide"
+    },
+    {
+      "name": "Hide Phone Number",
+      "recommendedValue": "Nobody",
+      "clickPath": ["Settings", "Privacy", "Phone Number", "Who can see my number: Nobody", "Who can find me by number: Nobody"],
+      "impact": "Phone numbers are real-world identity anchors. Hiding your number lets you be contacted via username without exposing it, protecting against doxxing.",
+      "source": "securityinabox.org; Signal Best Privacy Apps Guide 2025"
+    },
+    {
+      "name": "Always Relay Calls",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Privacy", "Advanced", "Always relay calls", "Toggle ON"],
+      "impact": "By default, Signal calls are peer-to-peer, revealing your IP address to the person you are calling. Relaying through Signal's servers hides your IP entirely.",
+      "source": "securityinabox.org; Signal Support documentation"
+    },
+    {
+      "name": "Screen Security",
+      "recommendedValue": "ON",
+      "clickPath": ["Settings", "Privacy", "Screen Security", "Toggle ON"],
+      "impact": "Without this, Signal messages appear as a preview in the app switcher when switching apps, exposing content to anyone looking over your shoulder.",
+      "source": "securityinabox.org; Signal Support: Screen Security"
+    },
+    {
+      "name": "Disappearing Messages Default",
+      "recommendedValue": "ON (1 week or shorter)",
+      "clickPath": ["Settings", "Privacy", "Default Timer for New Chats", "Choose a duration"],
+      "impact": "Even end-to-end encrypted messages pose a risk if a device is seized or compromised. Disappearing messages ensure content does not remain on either device indefinitely.",
+      "source": "securityinabox.org; Mozilla Foundation Signal Privacy Review"
+    }
+  ]
+}
